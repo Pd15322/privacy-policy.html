@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Gestione Chiamate Intermittenti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-bottom: 15px;
+            margin-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .info-box {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .contact {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .contact strong {
+            color: #2980b9;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informativa sulla Privacy</h1>
+        <p class="subtitle">Ultima modifica: 21 ottobre 2025</p>
+        
+        <div class="info-box">
+            <strong>Titolare del Trattamento:</strong><br>
+            P.IVA: 01958870675<br>
+            Email: <a href="mailto:assistenzachiamate0@gmail.com">assistenzachiamate0@gmail.com</a>
+        </div>
+
+        <h2>1. Introduzione</h2>
+        <p>
+            La presente informativa sulla privacy descrive le modalità di raccolta, utilizzo e protezione dei dati personali 
+            degli utenti dell'applicazione mobile <strong>"Gestione Chiamate Intermittenti"</strong> (di seguito "l'App").
+        </p>
+        <p>
+            L'App è destinata esclusivamente a <strong>datori di lavoro e consulenti del lavoro</strong> per la gestione 
+            delle comunicazioni obbligatorie relative ai contratti di lavoro intermittente, in conformità alla normativa italiana vigente.
+        </p>
+
+        <h2>2. Dati Raccolti</h2>
+        
+        <h3>2.1 Dati Inseriti dall'Utente</h3>
+        <p>L'App consente all'utente di inserire e gestire i seguenti dati in modo completamente locale sul dispositivo:</p>
+        <ul>
+            <li><strong>Dati del Datore di Lavoro:</strong> ragione sociale, codice fiscale/partita IVA, indirizzo sede legale, email, credenziali SMTP per invio email</li>
+            <li><strong>Dati dei Dipendenti:</strong> nome, cognome, codice fiscale, data e luogo di nascita, indirizzo di residenza</li>
+            <li><strong>Dati delle Chiamate:</strong> date di inizio e fine chiamata, storico comunicazioni</li>
+        </ul>
+        
+        <div class="info-box">
+            <strong>Importante:</strong> Tutti questi dati sono salvati <strong>esclusivamente in locale</strong> sul dispositivo dell'utente 
+            tramite database SQLite. Non vengono mai trasmessi ai nostri server o a terze parti, ad eccezione dell'invio delle comunicazioni 
+            obbligatorie tramite email come descritto al punto 2.3.
+        </div>
+
+        <h3>2.2 Dati di Abbonamento</h3>
+        <p>Per la gestione degli abbonamenti Premium, l'App utilizza il sistema <strong>Google Play Billing</strong>. I dati relativi agli acquisti sono gestiti direttamente da Google secondo la <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy di Google</a>.</p>
+        <p>L'App salva localmente solo:</p>
+        <ul>
+            <li>Data di inizio della prova gratuita</li>
+            <li>Stato dell'abbonamento (attivo/non attivo)</li>
+        </ul>
+
+        <h3>2.3 Invio Email</h3>
+        <p>L'App consente l'invio di comunicazioni obbligatorie tramite:</p>
+        <ul>
+            <li><strong>App Email del dispositivo:</strong> l'email viene composta dall'App e inviata tramite l'applicazione email predefinita dell'utente</li>
+            <li><strong>Invio Diretto SMTP:</strong> l'utente può configurare le proprie credenziali SMTP per l'invio diretto. Le credenziali sono salvate solo localmente sul dispositivo in forma criptata</li>
+        </ul>
+        <p>Le email vengono inviate agli indirizzi configurati dall'utente (tipicamente <code>intermittenti@pec.lavoro.gov.it</code> come previsto dalla normativa italiana).</p>
+
+        <h2>3. Finalità del Trattamento</h2>
+        <p>I dati personali raccolti sono utilizzati esclusivamente per le seguenti finalità:</p>
+        <ul>
+            <li>Gestione delle comunicazioni obbligatorie relative ai contratti di lavoro intermittente</li>
+            <li>Generazione di documenti PDF e XML conformi alla normativa vigente</li>
+            <li>Invio delle comunicazioni agli enti preposti</li>
+            <li>Gestione dello storico delle chiamate effettuate</li>
+            <li>Gestione dell'abbonamento Premium tramite Google Play Billing</li>
+        </ul>
+
+        <h2>4. Base Giuridica del Trattamento</h2>
+        <p>Il trattamento dei dati personali si basa su:</p>
+        <ul>
+            <li><strong>Esecuzione di un contratto:</strong> per fornire i servizi dell'App all'utente</li>
+            <li><strong>Obbligo legale:</strong> per adempiere agli obblighi di legge relativi alle comunicazioni obbligatorie sui contratti intermittenti</li>
+            <li><strong>Consenso:</strong> per le funzionalità facoltative (come le notifiche)</li>
+        </ul>
+
+        <h2>5. Conservazione dei Dati</h2>
+        <p>I dati inseriti nell'App sono conservati:</p>
+        <ul>
+            <li><strong>Localmente sul dispositivo:</strong> fino a quando l'utente decide di eliminarli o disinstallare l'App</li>
+            <li><strong>Backup (se abilitato):</strong> secondo le impostazioni di backup del dispositivo gestite da Google/Apple</li>
+        </ul>
+        <p>Non esiste conservazione dei dati su server esterni al dispositivo dell'utente.</p>
+
+        <h2>6. Condivisione dei Dati</h2>
+        <p>I dati personali <strong>non vengono mai condivisi</strong> con il titolare del trattamento o terze parti, ad eccezione di:</p>
+        <ul>
+            <li><strong>Google Play Services:</strong> per la gestione degli abbonamenti (dati gestiti secondo la Privacy Policy di Google)</li>
+            <li><strong>Provider Email:</strong> quando l'utente sceglie di inviare le comunicazioni tramite SMTP, i dati vengono trasmessi al server email configurato</li>
+            <li><strong>Ministero del Lavoro:</strong> quando l'utente invia le comunicazioni obbligatorie all'indirizzo PEC istituzionale</li>
+        </ul>
+
+        <h2>7. Servizi di Terze Parti</h2>
+        <p>L'App utilizza i seguenti servizi di terze parti:</p>
+        <ul>
+            <li><strong>Google Play Billing:</strong> per gestire gli abbonamenti Premium - <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy Google</a></li>
+            <li><strong>Google In-App Review:</strong> per richiedere recensioni nell'App Store - <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy Google</a></li>
+        </ul>
+
+        <h2>8. Sicurezza dei Dati</h2>
+        <p>Adottiamo misure di sicurezza appropriate per proteggere i dati personali:</p>
+        <ul>
+            <li>Tutti i dati sono salvati localmente in un database criptato</li>
+            <li>Le credenziali SMTP sono salvate in forma criptata utilizzando tecnologie di sicurezza native del dispositivo</li>
+            <li>L'accesso ai dati è limitato al dispositivo dell'utente</li>
+            <li>Non esistono server centralizzati che memorizzano i dati</li>
+        </ul>
+
+        <h2>9. Diritti dell'Utente</h2>
+        <p>In conformità al GDPR (Regolamento UE 2016/679), l'utente ha diritto a:</p>
+        <ul>
+            <li><strong>Accesso:</strong> ottenere conferma dei dati trattati (visibili direttamente nell'App)</li>
+            <li><strong>Rettifica:</strong> correggere dati inesatti (modificabile direttamente nell'App)</li>
+            <li><strong>Cancellazione:</strong> eliminare i propri dati (cancellabile direttamente nell'App o disinstallando l'applicazione)</li>
+            <li><strong>Portabilità:</strong> esportare i dati in formato PDF o XML (funzionalità disponibile nell'App)</li>
+            <li><strong>Opposizione:</strong> opporsi al trattamento cessando l'utilizzo dell'App</li>
+        </ul>
+        <p>
+            Poiché tutti i dati sono gestiti localmente sul dispositivo, l'utente ha pieno controllo sui propri dati 
+            e può esercitare questi diritti autonomamente tramite le funzionalità dell'App.
+        </p>
+
+        <h2>10. Minori</h2>
+        <p>
+            L'App è destinata esclusivamente a <strong>utenti maggiorenni</strong> (età minima 18 anni) 
+            che operano come datori di lavoro o consulenti del lavoro. Non raccogliamo consapevolmente dati di minori di 18 anni.
+        </p>
+
+        <h2>11. Modifiche alla Privacy Policy</h2>
+        <p>
+            Ci riserviamo il diritto di modificare la presente informativa sulla privacy in qualsiasi momento. 
+            Le modifiche saranno comunicate tramite aggiornamento dell'App e della data in alto a questa pagina.
+        </p>
+
+        <h2>12. Cookie e Tracciamento</h2>
+        <p>
+            L'App <strong>non utilizza cookie</strong> né tecnologie di tracciamento. Non vengono raccolti dati analitici 
+            o di utilizzo dell'App da parte del titolare del trattamento.
+        </p>
+
+        <h2>13. Trasferimento Dati Extra-UE</h2>
+        <p>
+            I dati rimangono sempre sul dispositivo dell'utente. Gli unici trasferimenti potenziali extra-UE riguardano 
+            i servizi Google (Play Billing, In-App Review), gestiti secondo gli accordi di Google per la conformità GDPR.
+        </p>
+
+        <div class="contact">
+            <h2>14. Contatti</h2>
+            <p>Per qualsiasi domanda relativa alla presente informativa sulla privacy, è possibile contattarci a:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:assistenzachiamate0@gmail.com">assistenzachiamate0@gmail.com</a><br>
+                <strong>P.IVA:</strong> 01958870675
+            </p>
+            <p>
+                L'utente ha inoltre il diritto di presentare reclamo all'autorità di controllo competente 
+                (<a href="https://www.garanteprivacy.it" target="_blank">Garante per la Protezione dei Dati Personali</a>).
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 - Gestione Chiamate Intermittenti - Tutti i diritti riservati</p>
+            <p>P.IVA: 01958870675</p>
+        </div>
+    </div>
+</body>
+</html>
