@@ -5,221 +5,341 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - PADIApps</title>
     <style>
+        /* Reset e Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #2C3E50;
+            --orange: #F97316;
+            --cyan: #14B8A6;
+            --gray-dark: #374151;
+            --gray-light: #6B7280;
+            --bg-light: #F9FAFB;
+            --white: #FFFFFF;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--gray-dark);
             line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 100;
+            height: 120px;
+            overflow: hidden;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            height: 120px;
+            overflow: hidden;
+        }
+
+        .logo img {
+            height: 350px;
+            width: auto;
+            margin-top: -20px;
+        }
+
+        /* Content Page */
+        .content-page {
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            padding: 4rem 2rem;
         }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+
+        .content-page h1 {
+            color: var(--navy);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
         }
-        h2 {
-            color: #2c3e50;
-            margin-top: 30px;
-            margin-bottom: 15px;
+
+        .content-page h2 {
+            color: var(--navy);
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
         }
-        .highlight {
-            background-color: #d4edda;
-            border-left: 4px solid #28a745;
-            padding: 15px;
-            margin: 20px 0;
-            font-weight: bold;
+
+        .content-page p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--gray-dark);
         }
-        .important {
-            background-color: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
+
+        .content-page ul, .content-page ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--gray-dark);
         }
-        ul {
-            margin-left: 20px;
+
+        .content-page li {
+            margin-bottom: 0.5rem;
         }
-        li {
-            margin-bottom: 8px;
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 3rem 2rem 1.5rem;
         }
-        .contact-box {
-            background-color: #e7f3ff;
-            border: 1px solid #3498db;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 20px 0;
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
-        .last-updated {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 30px;
+
+        .footer-section {
+            text-align: center;
+        }
+
+        .footer-section .logo {
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.7;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            header {
+                height: 70px;
+            }
+            
+            nav {
+                padding: 0 1rem;
+                height: 70px;
+            }
+            
+            .logo {
+                height: 70px;
+                margin: 0 auto;
+            }
+            
+            .logo img {
+                height: 180px;
+                margin-top: -15px;
+            }
+
+            .content-page h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Data di entrata in vigore: 31/10/2025</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="padiapps_logo.png" alt="PADIApps Logo">
+            </div>
+        </nav>
+    </header>
 
-    <div class="highlight">
-        ✅ APPLICAZIONE COMPLETAMENTE ANONIMA E LOCALE<br>
-        Le nostre applicazioni NON raccolgono dati personali degli utenti. Tutti i dati inseriti (aziendali e dei dipendenti) rimangono ESCLUSIVAMENTE sul dispositivo dell'utente e non vengono mai trasmessi a PADIApps o a server esterni.
-    </div>
+    <div class="content-page">
+        <h1>Privacy Policy</h1>
+        <p style="font-style: italic; color: #666; margin-bottom: 30px;">Data di entrata in vigore: 31/10/2025</p>
 
-    <p>La presente Privacy Policy descrive come PADIApps gestisce la privacy degli utenti delle nostre applicazioni mobile completamente locali e anonime.</p>
+        <div style="background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 20px 0; font-weight: bold;">
+            ✅ APPLICAZIONE COMPLETAMENTE ANONIMA E LOCALE<br>
+            Le nostre applicazioni NON raccolgono dati personali degli utenti. Tutti i dati inseriti (aziendali e dei dipendenti) rimangono ESCLUSIVAMENTE sul dispositivo dell'utente e non vengono mai trasmessi a PADIApps o a server esterni.
+        </div>
 
-    <h2>1. Titolare del Trattamento</h2>
-    <div class="contact-box">
-        <p><strong>Titolare:</strong> Paolo Di Panfilo<br>
-        <strong>Sede legale:</strong> Contrada Valle Vignale 39, Notaresco (TE) 64024, Italia<br>
-        <strong>P.IVA:</strong> 01958870675<br>
-        <strong>Email:</strong> assistenza@padiapps.com</p>
-    </div>
+        <p>La presente Privacy Policy descrive come PADIApps gestisce la privacy degli utenti delle nostre applicazioni mobile completamente locali e anonime.</p>
 
-    <h2>2. Natura delle Applicazioni</h2>
-    <p>Le applicazioni sviluppate da PADIApps sono progettate per garantire la massima privacy degli utenti:</p>
-    <ul>
-        <li><strong>Nessuna registrazione richiesta:</strong> le app non richiedono la creazione di un account</li>
-        <li><strong>Nessun login:</strong> non viene richiesto email, password o altre credenziali</li>
-        <li><strong>Funzionamento offline:</strong> tutte le funzionalità principali operano localmente sul dispositivo</li>
-        <li><strong>Zero raccolta dati:</strong> PADIApps non raccoglie, conserva o tratta dati personali degli utenti</li>
-    </ul>
+        <h2>1. Titolare del Trattamento</h2>
+        <div style="background-color: #e7f3ff; border: 1px solid #3498db; border-radius: 5px; padding: 15px; margin: 20px 0;">
+            <p><strong>Titolare:</strong> Paolo Di Panfilo<br>
+            <strong>Sede legale:</strong> Contrada Valle Vignale 39, Notaresco (TE) 64024, Italia<br>
+            <strong>P.IVA:</strong> 01958870675<br>
+            <strong>Email:</strong> assistenza@padiapps.com</p>
+        </div>
 
-    <h2>3. Dati Inseriti dall'Utente - Archiviazione Locale</h2>
-    
-    <div class="important">
-        <strong>IMPORTANTE:</strong><br>
-        Tutti i dati inseriti dall'utente nelle applicazioni (dati aziendali, dati dipendenti, chiamate, documenti) sono conservati ESCLUSIVAMENTE sul dispositivo dell'utente tramite database SQLite locale.
-    </div>
-
-    <p><strong>Cosa significa per te:</strong></p>
-    <ul>
-        <li>I tuoi dati <strong>non lasciano mai</strong> il tuo dispositivo</li>
-        <li>PADIApps <strong>non ha accesso</strong> ai dati che inserisci</li>
-        <li>I dati <strong>non vengono sincronizzati</strong> su cloud o server esterni</li>
-        <li>L'invio di email con documenti PDF avviene <strong>direttamente dal tuo dispositivo</strong></li>
-        <li>Disinstallando l'app, tutti i dati vengono <strong>automaticamente eliminati</strong> dal dispositivo</li>
-    </ul>
-
-    <h2>4. Abbonamenti tramite Google Play Store</h2>
-    <p>Le nostre applicazioni utilizzano il sistema di abbonamento di Google Play Store per gestire le sottoscrizioni premium. In questo contesto:</p>
-    
-    <ul>
-        <li><strong>Google Play gestisce tutti i pagamenti:</strong> PADIApps non ha accesso ai dati di pagamento (carta di credito, dati bancari)</li>
-        <li><strong>Verifica anonima dell'abbonamento:</strong> l'app verifica lo stato dell'abbonamento tramite un token anonimo fornito da Google Play</li>
-        <li><strong>PADIApps non conosce l'identità dell'utente:</strong> riceviamo solo informazioni tecniche sullo stato dell'abbonamento, non dati personali</li>
-        <li><strong>Privacy gestita da Google:</strong> per informazioni su come Google Play gestisce i dati degli abbonamenti, consultare la Privacy Policy di Google Play</li>
-    </ul>
-
-    <p>PADIApps riceve esclusivamente:</p>
-    <ul>
-        <li>Token anonimo di verifica dell'acquisto</li>
-        <li>Stato dell'abbonamento (attivo/scaduto/cancellato)</li>
-        <li>Date di inizio e scadenza dell'abbonamento</li>
-    </ul>
-
-    <p><strong>PADIApps NON riceve:</strong> nome, email, indirizzo, telefono, dati di pagamento o qualsiasi altro dato identificativo dell'utente.</p>
-
-    <h2>5. Età Minima</h2>
-    <p>Le nostre applicazioni sono destinate esclusivamente a utenti maggiorenni (18 anni o più) per finalità professionali e aziendali.</p>
-
-    <h2>6. Responsabilità dell'Utente sui Dati dei Dipendenti</h2>
-    
-    <p>Per l'applicazione "Chiamate Intermittenti", l'utente inserisce dati personali dei propri dipendenti (nome, cognome, codice fiscale). In merito a questi dati:</p>
-
-    <div class="important">
-        <strong>L'utente è l'unico Titolare del Trattamento</strong> dei dati dei propri dipendenti e ha la responsabilità di:
+        <h2>2. Natura delle Applicazioni</h2>
+        <p>Le applicazioni sviluppate da PADIApps sono progettate per garantire la massima privacy degli utenti:</p>
         <ul>
-            <li>Ottenere il consenso necessario dai dipendenti per l'inserimento dei loro dati</li>
-            <li>Informare i dipendenti che i loro dati saranno trattati tramite l'applicazione</li>
-            <li>Garantire la sicurezza del proprio dispositivo (password, blocco schermo, backup)</li>
-            <li>Rispettare tutti gli obblighi previsti dal GDPR in qualità di Titolare del Trattamento</li>
-            <li>Cancellare i dati dei dipendenti quando non più necessari</li>
+            <li><strong>Nessuna registrazione richiesta:</strong> le app non richiedono la creazione di un account</li>
+            <li><strong>Nessun login:</strong> non viene richiesto email, password o altre credenziali</li>
+            <li><strong>Funzionamento offline:</strong> tutte le funzionalità principali operano localmente sul dispositivo</li>
+            <li><strong>Zero raccolta dati:</strong> PADIApps non raccoglie, conserva o tratta dati personali degli utenti</li>
         </ul>
+
+        <h2>3. Dati Inseriti dall'Utente - Archiviazione Locale</h2>
+        
+        <div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0;">
+            <strong>IMPORTANTE:</strong><br>
+            Tutti i dati inseriti dall'utente nelle applicazioni (dati aziendali, dati dipendenti, chiamate, documenti) sono conservati ESCLUSIVAMENTE sul dispositivo dell'utente tramite database SQLite locale.
+        </div>
+
+        <p><strong>Cosa significa per te:</strong></p>
+        <ul>
+            <li>I tuoi dati <strong>non lasciano mai</strong> il tuo dispositivo</li>
+            <li>PADIApps <strong>non ha accesso</strong> ai dati che inserisci</li>
+            <li>I dati <strong>non vengono sincronizzati</strong> su cloud o server esterni</li>
+            <li>L'invio di email con documenti PDF avviene <strong>direttamente dal tuo dispositivo</strong></li>
+            <li>Disinstallando l'app, tutti i dati vengono <strong>automaticamente eliminati</strong> dal dispositivo</li>
+        </ul>
+
+        <h2>4. Abbonamenti tramite Google Play Store</h2>
+        <p>Le nostre applicazioni utilizzano il sistema di abbonamento di Google Play Store per gestire le sottoscrizioni premium. In questo contesto:</p>
+        
+        <ul>
+            <li><strong>Google Play gestisce tutti i pagamenti:</strong> PADIApps non ha accesso ai dati di pagamento (carta di credito, dati bancari)</li>
+            <li><strong>Verifica anonima dell'abbonamento:</strong> l'app verifica lo stato dell'abbonamento tramite un token anonimo fornito da Google Play</li>
+            <li><strong>PADIApps non conosce l'identità dell'utente:</strong> riceviamo solo informazioni tecniche sullo stato dell'abbonamento, non dati personali</li>
+            <li><strong>Privacy gestita da Google:</strong> per informazioni su come Google Play gestisce i dati degli abbonamenti, consultare la Privacy Policy di Google Play</li>
+        </ul>
+
+        <p>PADIApps riceve esclusivamente:</p>
+        <ul>
+            <li>Token anonimo di verifica dell'acquisto</li>
+            <li>Stato dell'abbonamento (attivo/scaduto/cancellato)</li>
+            <li>Date di inizio e scadenza dell'abbonamento</li>
+        </ul>
+
+        <p><strong>PADIApps NON riceve:</strong> nome, email, indirizzo, telefono, dati di pagamento o qualsiasi altro dato identificativo dell'utente.</p>
+
+        <h2>5. Età Minima</h2>
+        <p>Le nostre applicazioni sono destinate esclusivamente a utenti maggiorenni (18 anni o più) per finalità professionali e aziendali.</p>
+
+        <h2>6. Responsabilità dell'Utente sui Dati dei Dipendenti</h2>
+        
+        <p>Per l'applicazione "Chiamate Intermittenti", l'utente inserisce dati personali dei propri dipendenti (nome, cognome, codice fiscale). In merito a questi dati:</p>
+
+        <div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0;">
+            <strong>L'utente è l'unico Titolare del Trattamento</strong> dei dati dei propri dipendenti e ha la responsabilità di:
+            <ul style="margin-top: 10px;">
+                <li>Ottenere il consenso necessario dai dipendenti per l'inserimento dei loro dati</li>
+                <li>Informare i dipendenti che i loro dati saranno trattati tramite l'applicazione</li>
+                <li>Garantire la sicurezza del proprio dispositivo (password, blocco schermo, backup)</li>
+                <li>Rispettare tutti gli obblighi previsti dal GDPR in qualità di Titolare del Trattamento</li>
+                <li>Cancellare i dati dei dipendenti quando non più necessari</li>
+            </ul>
+        </div>
+
+        <p><strong>PADIApps fornisce esclusivamente uno strumento software</strong> per la gestione locale dei dati e non ha alcun accesso, controllo o responsabilità sui dati inseriti dall'utente.</p>
+
+        <h2>7. Dati Tecnici Minimi</h2>
+        <p>Per garantire il corretto funzionamento delle applicazioni, potremmo raccogliere dati tecnici anonimi e non identificativi quali:</p>
+        <ul>
+            <li>Tipo e modello di dispositivo</li>
+            <li>Versione del sistema operativo</li>
+            <li>Versione dell'applicazione installata</li>
+            <li>Report di crash anonimi (per correggere bug e migliorare la stabilità)</li>
+        </ul>
+        <p>Questi dati sono anonimi, aggregati e non consentono l'identificazione dell'utente.</p>
+
+        <h2>8. Diritti dell'Utente</h2>
+        <p>Poiché PADIApps non raccoglie dati personali degli utenti, l'esercizio dei diritti GDPR è gestito direttamente dall'utente:</p>
+        <ul>
+            <li><strong>Accesso, rettifica, cancellazione:</strong> l'utente ha pieno controllo sui propri dati tramite le funzionalità dell'app</li>
+            <li><strong>Portabilità:</strong> l'utente può esportare i propri dati tramite le funzioni di esportazione PDF/XML integrate</li>
+            <li><strong>Cancellazione completa:</strong> disinstallando l'app, tutti i dati vengono automaticamente rimossi</li>
+        </ul>
+
+        <p>Per questioni relative alla privacy o richieste di assistenza, contattare: <strong>assistenza@padiapps.com</strong></p>
+
+        <h2>9. Sicurezza</h2>
+        <p>PADIApps adotta le seguenti misure per garantire la sicurezza delle applicazioni:</p>
+        <ul>
+            <li>Codice sicuro e aggiornamenti regolari per correggere vulnerabilità</li>
+            <li>Archiviazione dati esclusivamente locale sul dispositivo dell'utente</li>
+            <li>Nessuna trasmissione di dati sensibili a server esterni</li>
+            <li>Utilizzo di protocolli sicuri per la verifica degli abbonamenti (HTTPS)</li>
+        </ul>
+
+        <p><strong>Responsabilità dell'utente:</strong> garantire la sicurezza fisica del proprio dispositivo (password, blocco schermo, backup criptati).</p>
+
+        <h2>10. Cookie e Tecnologie di Tracciamento</h2>
+        <p>Le nostre applicazioni mobile <strong>NON utilizzano cookie</strong> o tecnologie di tracciamento web.</p>
+        
+        <p>L'app utilizza esclusivamente:</p>
+        <ul>
+            <li>Database SQLite locale per salvare i dati inseriti dall'utente</li>
+            <li>SharedPreferences per salvare le preferenze dell'app (tema, lingua, ecc.)</li>
+        </ul>
+
+        <p>Nessuna di queste tecnologie invia dati a server esterni o consente il tracciamento dell'utente.</p>
+
+        <h2>11. Condivisione dei Dati</h2>
+        <p>PADIApps <strong>NON condivide alcun dato personale</strong> con terze parti, in quanto non raccoglie dati personali degli utenti.</p>
+        
+        <p>Gli unici soggetti coinvolti sono:</p>
+        <ul>
+            <li><strong>Google Play:</strong> per la gestione tecnica degli abbonamenti (secondo le policy di Google)</li>
+            <li><strong>Autorità competenti:</strong> solo se espressamente richiesto dalla legge italiana</li>
+        </ul>
+
+        <h2>12. Trasferimento dei Dati</h2>
+        <p>I dati inseriti dall'utente <strong>non vengono mai trasferiti</strong> fuori dal dispositivo, né all'interno dell'UE né verso paesi terzi.</p>
+
+        <h2>13. Modifiche alla Privacy Policy</h2>
+        <p>Ci riserviamo il diritto di modificare la presente Privacy Policy per adeguarla a eventuali cambiamenti normativi o funzionali delle applicazioni. Le modifiche saranno comunicate tramite:</p>
+        <ul>
+            <li>Aggiornamento di questa pagina con nuova data di entrata in vigore</li>
+            <li>Notifica all'apertura dell'app (per modifiche sostanziali)</li>
+        </ul>
+
+        <h2>14. Reclami</h2>
+        <p>In caso di preoccupazioni relative alla privacy o alla protezione dei dati, l'utente ha diritto di contattarci o di proporre reclamo al Garante per la protezione dei dati personali:</p>
+        <div style="background-color: #e7f3ff; border: 1px solid #3498db; border-radius: 5px; padding: 15px; margin: 20px 0;">
+            <p><strong>Garante per la protezione dei dati personali</strong><br>
+            Piazza Venezia, 11 - 00187 Roma<br>
+            Email: garante@gpdp.it<br>
+            Tel: +39 06 696771</p>
+        </div>
+
+        <h2>15. Contatti</h2>
+        <p>Per qualsiasi domanda relativa alla presente Privacy Policy o al funzionamento delle applicazioni:</p>
+        <div style="background-color: #e7f3ff; border: 1px solid #3498db; border-radius: 5px; padding: 15px; margin: 20px 0;">
+            <p><strong>Email:</strong> assistenza@padiapps.com<br>
+            <strong>Sede:</strong> Contrada Valle Vignale 39, Notaresco (TE) 64024, Italia<br>
+            <strong>P.IVA:</strong> 01958870675</p>
+        </div>
     </div>
 
-    <p><strong>PADIApps fornisce esclusivamente uno strumento software</strong> per la gestione locale dei dati e non ha alcun accesso, controllo o responsabilità sui dati inseriti dall'utente.</p>
-
-    <h2>7. Dati Tecnici Minimi</h2>
-    <p>Per garantire il corretto funzionamento delle applicazioni, potremmo raccogliere dati tecnici anonimi e non identificativi quali:</p>
-    <ul>
-        <li>Tipo e modello di dispositivo</li>
-        <li>Versione del sistema operativo</li>
-        <li>Versione dell'applicazione installata</li>
-        <li>Report di crash anonimi (per correggere bug e migliorare la stabilità)</li>
-    </ul>
-    <p>Questi dati sono anonimi, aggregati e non consentono l'identificazione dell'utente.</p>
-
-    <h2>8. Diritti dell'Utente</h2>
-    <p>Poiché PADIApps non raccoglie dati personali degli utenti, l'esercizio dei diritti GDPR è gestito direttamente dall'utente:</p>
-    <ul>
-        <li><strong>Accesso, rettifica, cancellazione:</strong> l'utente ha pieno controllo sui propri dati tramite le funzionalità dell'app</li>
-        <li><strong>Portabilità:</strong> l'utente può esportare i propri dati tramite le funzioni di esportazione PDF/XML integrate</li>
-        <li><strong>Cancellazione completa:</strong> disinstallando l'app, tutti i dati vengono automaticamente rimossi</li>
-    </ul>
-
-    <p>Per questioni relative alla privacy o richieste di assistenza, contattare: <strong>assistenza@padiapps.com</strong></p>
-
-    <h2>9. Sicurezza</h2>
-    <p>PADIApps adotta le seguenti misure per garantire la sicurezza delle applicazioni:</p>
-    <ul>
-        <li>Codice sicuro e aggiornamenti regolari per correggere vulnerabilità</li>
-        <li>Archiviazione dati esclusivamente locale sul dispositivo dell'utente</li>
-        <li>Nessuna trasmissione di dati sensibili a server esterni</li>
-        <li>Utilizzo di protocolli sicuri per la verifica degli abbonamenti (HTTPS)</li>
-    </ul>
-
-    <p><strong>Responsabilità dell'utente:</strong> garantire la sicurezza fisica del proprio dispositivo (password, blocco schermo, backup criptati).</p>
-
-    <h2>10. Cookie e Tecnologie di Tracciamento</h2>
-    <p>Le nostre applicazioni mobile <strong>NON utilizzano cookie</strong> o tecnologie di tracciamento web.</p>
-    
-    <p>L'app utilizza esclusivamente:</p>
-    <ul>
-        <li>Database SQLite locale per salvare i dati inseriti dall'utente</li>
-        <li>SharedPreferences per salvare le preferenze dell'app (tema, lingua, ecc.)</li>
-    </ul>
-
-    <p>Nessuna di queste tecnologie invia dati a server esterni o consente il tracciamento dell'utente.</p>
-
-    <h2>11. Condivisione dei Dati</h2>
-    <p>PADIApps <strong>NON condivide alcun dato personale</strong> con terze parti, in quanto non raccoglie dati personali degli utenti.</p>
-    
-    <p>Gli unici soggetti coinvolti sono:</p>
-    <ul>
-        <li><strong>Google Play:</strong> per la gestione tecnica degli abbonamenti (secondo le policy di Google)</li>
-        <li><strong>Autorità competenti:</strong> solo se espressamente richiesto dalla legge italiana</li>
-    </ul>
-
-    <h2>12. Trasferimento dei Dati</h2>
-    <p>I dati inseriti dall'utente <strong>non vengono mai trasferiti</strong> fuori dal dispositivo, né all'interno dell'UE né verso paesi terzi.</p>
-
-    <h2>13. Modifiche alla Privacy Policy</h2>
-    <p>Ci riserviamo il diritto di modificare la presente Privacy Policy per adeguarla a eventuali cambiamenti normativi o funzionali delle applicazioni. Le modifiche saranno comunicate tramite:</p>
-    <ul>
-        <li>Aggiornamento di questa pagina con nuova data di entrata in vigore</li>
-        <li>Notifica all'apertura dell'app (per modifiche sostanziali)</li>
-    </ul>
-
-    <h2>14. Reclami</h2>
-    <p>In caso di preoccupazioni relative alla privacy o alla protezione dei dati, l'utente ha diritto di contattarci o di proporre reclamo al Garante per la protezione dei dati personali:</p>
-    <div class="contact-box">
-        <p><strong>Garante per la protezione dei dati personali</strong><br>
-        Piazza Venezia, 11 - 00187 Roma<br>
-        Email: garante@gpdp.it<br>
-        Tel: +39 06 696771</p>
-    </div>
-
-    <h2>15. Contatti</h2>
-    <p>Per qualsiasi domanda relativa alla presente Privacy Policy o al funzionamento delle applicazioni:</p>
-    <div class="contact-box">
-        <p><strong>Email:</strong> assistenza@padiapps.com<br>
-        <strong>Sede:</strong> Contrada Valle Vignale 39, Notaresco (TE) 64024, Italia<br>
-        <strong>P.IVA:</strong> 01958870675</p>
-    </div>
-
-    <hr style="margin: 40px 0;">
-    <p style="text-align: center; color: #666; font-size: 14px;">
-        © 2024 PADIApps - Tutti i diritti riservati
-    </p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="padiapps_logo.png" alt="PADIApps Logo">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 PADIApps - Tutti i diritti riservati
+        </div>
+    </footer>
 </body>
 </html>
